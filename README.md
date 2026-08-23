@@ -38,8 +38,10 @@ pinned `vendor/pocketjs` submodule and are not copied into this product.
 ## Build
 
 Requirements: Bun and Rust. macOS native builds also need Xcode command-line
-tools. Linux native builds need the gpui X11/Wayland, Fontconfig and Vulkan
-development libraries listed by the CI workflow.
+tools; Xcode 26 and newer ship the Metal compiler separately, so install it
+once with `xcodebuild -downloadComponent MetalToolchain` or the gpui shader
+build fails. Linux native builds need the gpui X11/Wayland, Fontconfig and
+Vulkan development libraries listed by the CI workflow.
 
 ```sh
 bun run setup
