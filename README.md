@@ -6,9 +6,15 @@ application presentation and theme selection; PocketJS owns package
 resolution, AppInstance isolation, scheduling and native composition.
 
 The `classic` theme is inspired by late-1990s desktop interfaces. The `xp`
-theme adapts Sheru's Luna palette, three-stop plastic gradients, caption
-controls, menus and application surfaces to PocketJS-native drawing. **Both
-themes use the same System manifest, AppInstances and native compositor.**
+theme rebuilds Sheru's Luna chrome from PocketJS-native drawing: every raised
+surface is a three-stop base gradient under stacked 1px highlight and seat
+strips, window frames round their top corners and stay square at the bottom,
+and captions, controls, menus and the taskbar carry colors sampled from a
+96dpi Luna capture. Its Start button opens the two-column XP panel — user
+header, programs column with All Programs pinned at its foot, places column,
+Turn Off Computer along the bottom — and its text is baked from Inter, since
+XP's own Tahoma cannot be redistributed. **Both themes use the same System
+manifest, AppInstances and native compositor.**
 Choose one from **Start → Settings**, or press **Cmd+Shift+T** to toggle while
 testing.
 
